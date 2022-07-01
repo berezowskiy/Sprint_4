@@ -34,7 +34,8 @@ public class ParameterizedTest {
                     {"Александр Пушкин ", false},
                     {" Александр  Пушкин", false},
                     {" Александр Пушкин ", false},
-
+                    {" Пушкин", false},
+                    {"Пушкин ", false},
                     {"", false},
             };
         }

@@ -3,6 +3,7 @@ package com.example;
 public class Praktikum {
 
     public static final String name = "Тимоти Ш";
+
     public static void main(String[] args) {
         /*
              В этом методе заложи логику работы с классом Account.
