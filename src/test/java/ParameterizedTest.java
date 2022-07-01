@@ -21,13 +21,21 @@ public class ParameterizedTest {
         @Parameterized.Parameters
         public static Object[][] getTestData() {
             return new Object[][] {
-                    {"Макс +100500", true},
-                    {"Евгений Гришковец", true},
-                    {" Павел Воля ", false},
-                    {"GuyFox", false},
-                    {"Александр  Невский", false},
-                    {"Александр Сергеевич Пушкин", false},
-                    {"1", false},
+                    {"ИМЯ СПРОБЕЛОМ", true},
+                    {"123 567890", true},
+                    {"<>><>><> ***?***", true},
+
+                    {"Т РИ", true},
+                    {"Девятнадцать буквVv", true},
+
+                    {"ИМЯБЕЗПРОБЕЛА", false},
+                    {"ИМЯ ТРИ ПРОБЕЛА", false},
+
+                    {"Александр Пушкин ", false},
+                    {" Александр  Пушкин", false},
+                    {" Александр Пушкин ", false},
+
+                    {"", false},
             };
         }
 
